@@ -1225,7 +1225,7 @@ Proyek ini dilisensikan di bawah ISC License - lihat file LICENSE untuk detail.
 
 ---
 
-## ❤️ Terima Kasih
+## 🤝🏻 Terima Kasih
 
 Terima kasih telah menggunakan Temtra Emotional AI. Semoga aplikasi ini dapat membantu kamu dalam perjalanan emosional. 🌟
 
@@ -1233,4 +1233,8 @@ Terima kasih telah menggunakan Temtra Emotional AI. Semoga aplikasi ini dapat me
 
 **Last Updated:** Januari 2026
 **Version:** 1.0.0
-**Maintainer:** naandarz
+**made by:** 
+naandarz
+Sendi Ibnu Hilmiawan
+Raditya Endra Mahardika
+Rosyita Nur Syafa'ah
