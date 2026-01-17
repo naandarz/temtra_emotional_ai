@@ -1,0 +1,228 @@
+/* ================== RESET ================== */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eef5f1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ================== APP CONTAINER ================== */
+.app {
+  width: 90%;
+  max-width: 1200px;       /* lebih luas untuk desktop */
+  height: 90vh;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* ================== HEADER ================== */
+header {
+  text-align: center;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+header p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+/* ================== MODE STATUS ================== */
+.mode-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  background: #e0f2ed;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+.mode-status .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2ecc71;
+}
+
+/* ================== MODE MENU ================== */
+.mode-menu {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.mode {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 999px;
+  border: 1px solid #e0e0e0;
+  background: #f6f6f6;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.mode.active {
+  background: #2ecc71;
+  color: #ffffff;
+  border-color: #2ecc71;
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.mode:hover:not(.active) {
+  background: #dff5ea;
+}
+
+/* ================== ACTION MENU ================== */
+.action-menu {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 999px;
+  border: 1px solid #dfeee6;
+  background: #f4fbf7;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.action-btn:hover {
+  background: #2ecc71;
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.action-btn.danger {
+  background: #fff2f2;
+  border-color: #ffd6d6;
+}
+
+.action-btn.danger:hover {
+  background: #e74c3c;
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+/* ================== CHAT ================== */
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  background: #f9f9f9;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar minimalis */
+.chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.15);
+  border-radius: 4px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* message bubble */
+.message {
+  max-width: 70%;
+  padding: 12px 18px;
+  border-radius: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+  word-wrap: break-word;
+  transition: all 0.2s ease;
+}
+
+.message.user {
+  margin-left: auto;
+  background: linear-gradient(135deg, #dff5ea, #b3e6c7);
+  color: #2c3e50;
+  border-bottom-right-radius: 8px;
+}
+
+.message.ai {
+  margin-right: auto;
+  background: linear-gradient(135deg, #ffffff, #e0f2ed);
+  color: #16a085;
+  border-bottom-left-radius: 8px;
+}
+
+/* ================== INPUT ================== */
+.input-area {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+textarea {
+  flex: 1;
+  padding: 14px 18px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  transition: all 0.2s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #2ecc71;
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
+}
+
+#sendBtn {
+  padding: 12px 24px;
+  border-radius: 20px;
+  border: none;
+  background: #2ecc71;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#sendBtn:hover {
+  background: #27ae60;
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+}
